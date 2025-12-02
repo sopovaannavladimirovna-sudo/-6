@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карусель с ручным переключением</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Слайдер изображений</h1>
+
+        <div class="carousel">
+            <!-- Стрелка "Назад" -->
+            <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+
+            <div class="carousel-slide" id="carouselSlide">
+                <img src="foto1.jpg" alt="Изображение 1">
+                <img src="foto2.jpg" alt="Изображение 2">
+                <img src="foto3.jpg" alt="Изображение 3">
+                <img src="foto4.jpg" alt="Изображение 4">
+                <img src="foto5.jpg" alt="Изображение 5">
+            </div>
+
+            <!-- Стрелка "Вперёд" -->
+            <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+        </div>
+
+        <!-- Точки-индикаторы -->
+        <div class="carousel-dots" id="carouselDots">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+            <div class="dot" data-index="4"></div>
+        </div>
+    </div>
+
+    <script src="new.js"></script>
+</body>
+</html>
